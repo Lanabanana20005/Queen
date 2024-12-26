@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Queen</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h2>
+            <a href="#"><img src="src/logo.png" alt="Queen Logo"></a>
+        </h2>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="Info.html">Общая информация</a></li>
+                <li><a href="History.html">История</a></li>
+                <li><a href="Disc.html">Дискография</a></li>
+                <li><a href="Film.html">Фильмография</a></li>
+                <li><a href="Links.html">Источники</a></li>
+                <li><a href="Shop.html">Заказать</a></li>
+                <li><a href="Contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Поиск..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <input type="checkbox" id="nav-toggle" hidden>
+    <label for="nav-toggle" class="nav-toggle"></label>
+    
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="Info.html">Общая информация</a></li>
+                <li><a href="History.html">История</a></li>
+                <li><a href="Disc.html">Дискография</a></li>
+                <li><a href="Film.html">Фильмография</a></li>
+                <li><a href="Links.html">Источники</a></li>
+                <li><a href="Shop.html">Заказать</a></li>
+                <li><a href="Contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <article class="textcols">
+            <div class="textcols-item">
+                <div class="content">
+                    <h1><em>Дискография</em></h1>
+                    
+                    <img src="src/70s.jpg" alt="70s Albums" width="45%">
+                    <ul>
+                        <li>Queen (1973)</li>
+                        <li>Queen II (1974)</li>
+                        <li>Sheet Heart Attack (1974)</li>
+                        <li>A Night at the Opera (1975)</li>
+                        <li>A Day at the Races (1976)</li>
+                        <li>News of the World (1977)</li>
+                        <li>Jazz (1978)</li>
+                    </ul>
+                    <a href="https://archive.org/details/a-night-at-the-opera_202405.html">Скачать</a>
+
+                    <img src="src/80s.jpg" alt="80s Albums" width="45%">
+                    <ul>
+                        <li>The Game (1980)</li>
+                        <li>Flash Gordon (1980)</li>
+                        <li>Hot Space (1982)</li>
+                        <li>The Works (1984)</li>
+                        <li>A Kind of Magic (1986)</li>
+                        <li>The Miracle (1989)</li>
+                    </ul>
+                    <a href="https://archive.org/details/QueenTheGame">Скачать</a>
+
+                    <img src="src/90s.jpg" alt="90s Albums" width="45%">
+                    <ul>
+                        <li>Innuendo (1991)</li>
+                        <li>Live at Wembley '86 (1992)</li>
+                        <li>Made in Heaven (1995)</li>
+                    </ul>
+                    <a href="https://archive.org/details/vid-20230805-122615">Скачать</a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="button-footer">
+            <button onclick="window.open('https://ru.wikipedia.org/wiki/Queen', '_blank')">
+                <i class="fa fa-wikipedia-w"></i>
+            </button>
+            
+            <button onclick="document.querySelector('.search-container').scrollIntoView({behavior: 'smooth'})">
+                <i class="fa fa-search"></i>
+            </button>
+            
+            <button onclick="window.location.href='Shop.html'">
+                <i class="fa fa-shopping-cart"></i>
+            </button>
+            
+            <button onclick="window.location.href='mailto:your@email.com'">
+                <i class="fa fa-envelope"></i>
+            </button>
+            
+            <button onclick="window.open('https://t.me/your_telegram', '_blank')">
+                <i class="fa fa-telegram"></i>
+            </button>
+        </div>
+        <p>&copy; Все права защищены.</p>
+    </footer>
+</body>
+</html>

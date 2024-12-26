@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Queen</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h2>
+            <a href="#"><img src="src/logo.png" alt="Queen Logo"></a>
+        </h2>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="Info.html">Общая информация</a></li>
+                <li><a href="History.html">История</a></li>
+                <li><a href="Disc.html">Дискография</a></li>
+                <li><a href="Film.html">Фильмография</a></li>
+                <li><a href="Links.html">Источники</a></li>
+                <li><a href="Shop.html">Заказать</a></li>
+                <li><a href="Contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Поиск..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <input type="checkbox" id="nav-toggle" hidden>
+    <label for="nav-toggle" class="nav-toggle"></label>
+    
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="Info.html">Общая информация</a></li>
+                <li><a href="History.html">История</a></li>
+                <li><a href="Disc.html">Дискография</a></li>
+                <li><a href="Film.html">Фильмография</a></li>
+                <li><a href="Links.html">Источники</a></li>
+                <li><a href="Shop.html">Заказать</a></li>
+                <li><a href="Contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <article class="textcols">
+            <div class="textcols-item">
+                <div class="content">
+                    <h1><em>Queen — британская рок-группа, основанная в 1970 году в Лондоне</em></h1>
+                    <img src="src/cover.jpg" width="15%" alt="Queen Cover">
+                    
+                    <p>Она известна своим уникальным смешением стилей, включая рок, поп, хард-рок и оперу, а также эмоционально насыщенным вокалом и театральными выступлениями.</p>
+                    <p>Queen оказала значительное влияние на развитие музыки и стала одной из самых успешных групп в истории.</p>
+
+                    <h3>1. Фредди Меркьюри (Freddie Mercury):</h3>
+                    <img src="src/freddie.jpg" width="15%" alt="Freddie Mercury">
+                    <p><b>Настоящее имя:</b> Фаррук Булсара</p>
+                    <p><b>Даты жизни:</b> 5 сентября 1946 года — 24 ноября 1991 года</p>
+                    <p><b>Роль в группе:</b> Вокалист, клавишник, автор песен</p>
+                    <p>Фредди был иконой рока, известным своим мощным голосом и харизматичными выступлениями. Он написал множество классических хитов, таких как "Bohemian Rhapsody", "Somebody to Love" и "Killer Queen". Меркьюри также прославился своим уникальным сценическим образом и стилем.</p>
+
+                    <h3>2. Брайан Мэй (Brian May):</h3>
+                    <img src="src/brian.jpg" width="15%" alt="Brian May">
+                    <p><b>Даты жизни:</b> 19 июля 1947 года</p>
+                    <p><b>Роль в группе:</b> Гитарист, автор песен, бэковый вокал</p>
+                    <p>Брайан является соавтором многих хитов группы и известен своим характерным звучанием гитары, сделанной вручную. Он написал такие песни, как "We Will Rock You", "Tie Your Mother Down" и "Fat Bottomed Girls". Мэй также имеет ученую степень в области астрофизики.</p>
+
+                    <h3>3. Роджер Тейлор (Roger Taylor):</h3>
+                    <img src="src/roger.jpg" width="15%" alt="Roger Taylor">
+                    <p><b>Даты жизни:</b> 26 июля 1949 года</p>
+                    <p><b>Роль в группе:</b> Барабанщик, вокалист, автор песен</p>
+                    <p>Роджер известен своим мощным стилем игры на барабанах и своим вокалом. Он написал такие песни, как "Radio Ga Ga" и "A Kind of Magic". Кроме того, он активно участвует в проекте "The Cross" и соло-карьере.</p>
+
+                    <h3>4. Джон Дикон (John Deacon):</h3>
+                    <img src="src/john.jpg" width="15%" alt="John Deacon">
+                    <p><b>Даты жизни:</b> 19 августа 1951 года</p>
+                    <p><b>Роль в группе:</b> Бас-гитарист, автор песен</p>
+                    <p>Джон был менее заметной фигурой на сцене, но сделал важный вклад в создание звучания группы, написав такие хиты, как "You're My Best Friend" и "Another One Bites the Dust". Дикон также известен своим мастерством игры на бас-гитаре.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="button-footer">
+            <button onclick="window.open('https://ru.wikipedia.org/wiki/Queen', '_blank')">
+                <i class="fa fa-wikipedia-w"></i>
+            </button>
+            
+            <button onclick="document.querySelector('.search-container').scrollIntoView({behavior: 'smooth'})">
+                <i class="fa fa-search"></i>
+            </button>
+            
+            <button onclick="window.location.href='Shop.html'">
+                <i class="fa fa-shopping-cart"></i>
+            </button>
+            
+            <button onclick="window.location.href='mailto:your@email.com'">
+                <i class="fa fa-envelope"></i>
+            </button>
+            
+            <button onclick="window.open('https://t.me/your_telegram', '_blank')">
+                <i class="fa fa-telegram"></i>
+            </button>
+        </div>
+        <p>&copy; Все права защищены.</p>
+    </footer>
+</body>
+</html>

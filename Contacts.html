@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Queen</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h2>
+            <a href="#"><img src="src/logo.png" alt="Queen Logo"></a>
+        </h2>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="Info.html">Общая информация</a></li>
+                <li><a href="History.html">История</a></li>
+                <li><a href="Disc.html">Дискография</a></li>
+                <li><a href="Film.html">Фильмография</a></li>
+                <li><a href="Links.html">Источники</a></li>
+                <li><a href="Shop.html">Заказать</a></li>
+                <li><a href="Contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Поиск..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <input type="checkbox" id="nav-toggle" hidden>
+    <label for="nav-toggle" class="nav-toggle"></label>
+    
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="Info.html">Общая информация</a></li>
+                <li><a href="History.html">История</a></li>
+                <li><a href="Disc.html">Дискография</a></li>
+                <li><a href="Film.html">Фильмография</a></li>
+                <li><a href="Links.html">Источники</a></li>
+                <li><a href="Shop.html">Заказать</a></li>
+                <li><a href="Contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <article class="textcols">
+            <div class="textcols-item">
+                <div class="content">
+                    <h1><em>Контакты</em></h1>
+                    <h3>Наша почта: <a href="mailto:l.a.belozertseva@mail.ru">Напишите нам</a></h3>
+                    <h3>Мы в социальных сетях: 
+                        <a href="http://t.me/zekekinnie">
+                            <img src="src/tg.png" alt="Telegram" width="50">
+                        </a>
+                    </h3>
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5257a6ec1549b99aaaa6ad94b0195bb9f137b9cf3ce9df0e1ad843f95573b383&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="button-footer">
+            <button onclick="window.open('https://ru.wikipedia.org/wiki/Queen', '_blank')">
+                <i class="fa fa-wikipedia-w"></i>
+            </button>
+            
+            <button onclick="document.querySelector('.search-container').scrollIntoView({behavior: 'smooth'})">
+                <i class="fa fa-search"></i>
+            </button>
+            
+            <button onclick="window.location.href='Shop.html'">
+                <i class="fa fa-shopping-cart"></i>
+            </button>
+            
+            <button onclick="window.location.href='mailto:your@email.com'">
+                <i class="fa fa-envelope"></i>
+            </button>
+            
+            <button onclick="window.open('https://t.me/your_telegram', '_blank')">
+                <i class="fa fa-telegram"></i>
+            </button>
+        </div>
+        <p>&copy; Все права защищены.</p>
+    </footer>
+</body>
+</html>

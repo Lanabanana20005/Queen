@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Queen</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h2>
+            <a href="#"><img src="src/logo.png" alt="Queen Logo"></a>
+        </h2>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="Info.html">Общая информация</a></li>
+                <li><a href="History.html">История</a></li>
+                <li><a href="Disc.html">Дискография</a></li>
+                <li><a href="Film.html">Фильмография</a></li>
+                <li><a href="Links.html">Источники</a></li>
+                <li><a href="Shop.html">Заказать</a></li>
+                <li><a href="Contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="Поиск..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <input type="checkbox" id="nav-toggle" hidden>
+    <label for="nav-toggle" class="nav-toggle"></label>
+    
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="Info.html">Общая информация</a></li>
+                <li><a href="History.html">История</a></li>
+                <li><a href="Disc.html">Дискография</a></li>
+                <li><a href="Film.html">Фильмография</a></li>
+                <li><a href="Links.html">Источники</a></li>
+                <li><a href="Shop.html">Заказать</a></li>
+                <li><a href="Contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <article class="textcols">
+            <div class="textcols-item">
+                <div class="content">
+                    <h1><em>Фильмография</em></h1>
+                    <table>
+                        <tr>
+                            <th>Год</th>
+                            <th>Русское название</th>
+                            <th>Оригинальное название</th>
+                            <th>Афиша</th>
+                            <th>Примечание</th>
+                        </tr>
+                        <tr>
+                            <td>2002</td>
+                            <td>Убийца королевы!</td>
+                            <td>Killer Queen!</td>
+                            <td><img src="src/killerqueen.jpg" width="30%" alt="Killer Queen"></td>
+                            <td>х/ф</td>
+                        </tr>
+                        <tr>
+                            <td>2011</td>
+                            <td>Queen: Дни наших жизней</td>
+                            <td>Queen: Days of Our Lives</td>
+                            <td><img src="src/days.jpg" width="30%" alt="Days of Our Lives"></td>
+                            <td>документальный</td>
+                        </tr>
+                        <tr>
+                            <td>2011</td>
+                            <td>Queen: Подъём Меркьюри</td>
+                            <td>Queen: Mercury Rising</td>
+                            <td><img src="src/мерк.jpg" width="30%" alt="Mercury Rising"></td>
+                            <td>документальный</td>
+                        </tr>
+                        <tr>
+                            <td>2012</td>
+                            <td>Фредди Меркьюри. Великий притворщик</td>
+                            <td>The Great Pretender</td>
+                            <td><img src="src/прит.jpg" width="30%" alt="The Great Pretender"></td>
+                            <td>документальный</td>
+                        </tr>
+                        <tr>
+                            <td>2016</td>
+                            <td>История Фредди Меркьюри: Человек, который хотел жить вечно</td>
+                            <td>The Freddie Mercury Story: Who Wants to Live Forever</td>
+                            <td><img src="src/загадка.jpg" width="30%" alt="Who Wants to Live Forever"></td>
+                            <td>биографический, документальный</td>
+                        </tr>
+                        <tr>
+                            <td>2018</td>
+                            <td>Богемская рапсодия</td>
+                            <td>Bohemian Rhapsody</td>
+                            <td><img src="src/богем.jpg" width="30%" alt="Bohemian Rhapsody"></td>
+                            <td>биографический, драма, музыка</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="button-footer">
+            <button onclick="window.open('https://ru.wikipedia.org/wiki/Queen', '_blank')">
+                <i class="fa fa-wikipedia-w"></i>
+            </button>
+            
+            <button onclick="document.querySelector('.search-container').scrollIntoView({behavior: 'smooth'})">
+                <i class="fa fa-search"></i>
+            </button>
+            
+            <button onclick="window.location.href='Shop.html'">
+                <i class="fa fa-shopping-cart"></i>
+            </button>
+            
+            <button onclick="window.location.href='mailto:your@email.com'">
+                <i class="fa fa-envelope"></i>
+            </button>
+            
+            <button onclick="window.open('https://t.me/your_telegram', '_blank')">
+                <i class="fa fa-telegram"></i>
+            </button>
+        </div>
+        <p>&copy; Все права защищены.</p>
+    </footer>
+</body>
+</html>
